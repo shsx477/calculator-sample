@@ -109,6 +109,7 @@ class KeyPadView: UIView {
         btn.backgroundColor = bg
         btn.contentHorizontalAlignment = .center
         btn.contentVerticalAlignment = .center
+        btn.showsTouchWhenHighlighted = true
         
         btn.addTarget(self, action: #selector(self.btnTouched(_:)), for: .touchUpInside)
     }
