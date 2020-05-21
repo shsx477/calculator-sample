@@ -37,6 +37,8 @@ class CalculationManager {
         self.opd2 = nil
         self.curOpr = nil
         self.isReturned = false
+        self.lastOpr = nil
+        self.lastOpd2 = nil
     }
     
     
