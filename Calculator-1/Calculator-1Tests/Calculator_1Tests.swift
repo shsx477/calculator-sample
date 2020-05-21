@@ -33,7 +33,7 @@ class Calculator_1Tests: XCTestCase {
 
     
     func testCalculation_1() {
-        let calcHelper = CalculationHelper()
+        let calcHelper = CalculationManager()
         
         XCTAssertTrue(calcHelper.sendInput("1") == 1)
         XCTAssertTrue(calcHelper.sendInput("2") == 12)
@@ -42,7 +42,7 @@ class Calculator_1Tests: XCTestCase {
     }
     
     func testCalculation_2() {
-        let calcHelper = CalculationHelper()
+        let calcHelper = CalculationManager()
         
         XCTAssertTrue(calcHelper.sendInput("1") == 1)
         XCTAssertTrue(calcHelper.sendInput("2") == 12)
@@ -55,7 +55,7 @@ class Calculator_1Tests: XCTestCase {
     }
     
     func testCalculation_3() {
-        let calcHelper = CalculationHelper()
+        let calcHelper = CalculationManager()
         
         XCTAssertTrue(calcHelper.sendInput("1") == 1)
         XCTAssertTrue(calcHelper.sendInput("2") == 12)
@@ -65,7 +65,7 @@ class Calculator_1Tests: XCTestCase {
     }
     
     func testCalculation_4() {
-        let calcHelper = CalculationHelper()
+        let calcHelper = CalculationManager()
         
         XCTAssertTrue(calcHelper.sendInput("1") == 1)
         XCTAssertTrue(calcHelper.sendInput("2") == 12)
@@ -78,7 +78,7 @@ class Calculator_1Tests: XCTestCase {
     }
     
     func testCalculation_5() {
-        let calcHelper = CalculationHelper()
+        let calcHelper = CalculationManager()
         
         XCTAssertTrue(calcHelper.sendInput("1") == 1)
         XCTAssertTrue(calcHelper.sendInput("2") == 12)
@@ -91,7 +91,7 @@ class Calculator_1Tests: XCTestCase {
     }
     
     func testCalculation_6() {
-        let calcHelper = CalculationHelper()
+        let calcHelper = CalculationManager()
         
         XCTAssertTrue(calcHelper.sendInput("1") == 1)
         XCTAssertTrue(calcHelper.sendInput("2") == 12)
@@ -101,7 +101,7 @@ class Calculator_1Tests: XCTestCase {
     }
     
     func testCalculation_7() {
-        let calcHelper = CalculationHelper()
+        let calcHelper = CalculationManager()
         
         XCTAssertTrue(calcHelper.sendInput("2") == 2)
         XCTAssertTrue(calcHelper.sendInput(Const.MATH_ADD) == nil)
@@ -114,7 +114,7 @@ class Calculator_1Tests: XCTestCase {
     }
     
     func testCalculation_8() {
-        let calcHelper = CalculationHelper()
+        let calcHelper = CalculationManager()
         
         XCTAssertTrue(calcHelper.sendInput(Const.MATH_SUB) == nil)
         XCTAssertTrue(calcHelper.sendInput("5") == 5)
@@ -124,7 +124,7 @@ class Calculator_1Tests: XCTestCase {
     }
     
     func testCalculation_9() {
-        let calcHelper = CalculationHelper()
+        let calcHelper = CalculationManager()
         
         XCTAssertTrue(calcHelper.sendInput("1") == 1)
         XCTAssertTrue(calcHelper.sendInput(Const.MATH_MULT) == nil)
@@ -139,7 +139,7 @@ class Calculator_1Tests: XCTestCase {
     }
     
     func testCalculation_10() {
-        let calcHelper = CalculationHelper()
+        let calcHelper = CalculationManager()
         
         XCTAssertTrue(calcHelper.sendInput("1") == 1)
         XCTAssertTrue(calcHelper.sendInput("1") == 11)
@@ -159,7 +159,7 @@ class Calculator_1Tests: XCTestCase {
     }
     
     func testCalculation_11() {
-        let calcHelper = CalculationHelper()
+        let calcHelper = CalculationManager()
         
         XCTAssertTrue(calcHelper.sendInput("1") == 1)
         XCTAssertTrue(calcHelper.sendInput(Const.MATH_ADD) == nil)

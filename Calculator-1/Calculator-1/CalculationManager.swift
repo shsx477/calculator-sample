@@ -6,10 +6,12 @@
 //  Copyright © 2020 한선수. All rights reserved.
 //
 
+import Foundation
+
 class CalculationManager {
     typealias OPR_TYPE = (Double, Double) -> Double
     
-    private let maxLength: Double = 10 * 13 // 13자리로 제한
+    private let maxLength: Double = pow(10, 12) // 13자리로 제한
     
     private var opd1: Double = 0
     private var opd2: Double?
