@@ -13,7 +13,7 @@ class ViewController: UIViewController, KeyPadViewDelegate {
     private let margin: CGFloat = 10
     private let btnNumericBg = ViewController.createUIColor(red: 122, green: 124, blue: 132)
     private let btnOprBg = ViewController.createUIColor(red: 255, green: 175, blue: 0)
-    private let calcHelper = CalculationHelper()
+    private let calcHelper = CalculationManager()
     private var lb_display: UILabel!
     
     private let displayFormatter: NumberFormatter = {

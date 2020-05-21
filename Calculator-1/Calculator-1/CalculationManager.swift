@@ -6,7 +6,7 @@
 //  Copyright © 2020 한선수. All rights reserved.
 //
 
-class CalculationHelper {
+class CalculationManager {
     typealias OPR_TYPE = (Double, Double) -> Double
     
     private let maxLength: Double = 10 * 13 // 13자리로 제한
@@ -27,6 +27,7 @@ class CalculationHelper {
     
     private func division(_ val1: Double, _ val2: Double) -> Double { val1 / val2 }
     
+    
     private func calculate(_ val1: Double, _ val2: Double, _ oprAct: OPR_TYPE) -> Double { oprAct(val1, val2) }
     
     private func resetAllDatas() {
@@ -35,6 +36,7 @@ class CalculationHelper {
         self.curOpr = nil
         self.isReturned = false
     }
+    
     
     private func onOperatorReceived(_ selectedOpr: @escaping OPR_TYPE) -> Double? {
         var result: Double?

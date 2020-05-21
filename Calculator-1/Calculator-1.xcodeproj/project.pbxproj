@@ -14,7 +14,7 @@
 		A17D0D0224750FD400789A38 /* Calculator_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D0D0124750FD400789A38 /* Calculator_1UITests.swift */; };
 		A17D0D10247527F100789A38 /* KeyPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D0D0F247527F100789A38 /* KeyPadView.swift */; };
 		A17D0D1224766B4400789A38 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D0D1124766B4400789A38 /* Const.swift */; };
-		A17D0D1424766F5100789A38 /* CalculationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D0D1324766F5100789A38 /* CalculationHelper.swift */; };
+		A17D0D1424766F5100789A38 /* CalculationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D0D1324766F5100789A38 /* CalculationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		A17D0D0324750FD400789A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A17D0D0F247527F100789A38 /* KeyPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPadView.swift; sourceTree = "<group>"; };
 		A17D0D1124766B4400789A38 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
-		A17D0D1324766F5100789A38 /* CalculationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationHelper.swift; sourceTree = "<group>"; };
+		A17D0D1324766F5100789A38 /* CalculationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			children = (
 				A17D0CDF24750FD400789A38 /* AppDelegate.swift */,
 				A17D0CE824750FD400789A38 /* Assets.xcassets */,
-				A17D0D1324766F5100789A38 /* CalculationHelper.swift */,
+				A17D0D1324766F5100789A38 /* CalculationManager.swift */,
 				A17D0D1124766B4400789A38 /* Const.swift */,
 				A17D0CED24750FD400789A38 /* Info.plist */,
 				A17D0D0F247527F100789A38 /* KeyPadView.swift */,
@@ -258,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A17D0CE424750FD400789A38 /* ViewController.swift in Sources */,
-				A17D0D1424766F5100789A38 /* CalculationHelper.swift in Sources */,
+				A17D0D1424766F5100789A38 /* CalculationManager.swift in Sources */,
 				A17D0D1224766B4400789A38 /* Const.swift in Sources */,
 				A17D0D10247527F100789A38 /* KeyPadView.swift in Sources */,
 				A17D0CE024750FD400789A38 /* AppDelegate.swift in Sources */,
