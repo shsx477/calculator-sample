@@ -41,84 +41,84 @@ class ViewController: UIViewController, KeyPadViewDelegate {
     private func addKeyPad() -> KeyPadView {
 
 //        4 X 4
-//        let items = [
-//            [
-//                ItemInfoSet(displayText: "1", bg: self.btnNumericBg),
-//                ItemInfoSet(displayText: "2", bg: self.btnNumericBg),
-//                ItemInfoSet(displayText: "3", bg: self.btnNumericBg),
-//                ItemInfoSet(displayText: Const.MATH_ADD, bg: self.btnOprBg),
-//            ],
-//            [
-//                ItemInfoSet(displayText: "4", bg: self.btnNumericBg),
-//                ItemInfoSet(displayText: "5", bg: self.btnNumericBg),
-//                ItemInfoSet(displayText: "6", bg: self.btnNumericBg),
-//                ItemInfoSet(displayText: Const.MATH_SUB, bg: self.btnOprBg)
-//            ],
-//            [
-//                ItemInfoSet(displayText: "7", bg: self.btnNumericBg),
-//                ItemInfoSet(displayText: "8", bg: self.btnNumericBg),
-//                ItemInfoSet(displayText: "9", bg: self.btnNumericBg),
-//                ItemInfoSet(displayText: Const.MATH_MULT, bg: self.btnOprBg),
-//            ],
-//            [
-//                ItemInfoSet(displayText: "0", bg: self.btnNumericBg),
-//                ItemInfoSet(displayText: Const.MATH_ALLCLEAR, bg: self.btnNumericBg),
-//                ItemInfoSet(displayText: Const.MATH_RETURN, bg: self.btnOprBg),
-//                ItemInfoSet(displayText: Const.MATH_DIV, bg: self.btnOprBg),
-//            ]
-//        ]
-        
-        // 6 X 6
         let items = [
             [
                 ItemInfoSet(displayText: "1", bg: self.btnNumericBg),
                 ItemInfoSet(displayText: "2", bg: self.btnNumericBg),
                 ItemInfoSet(displayText: "3", bg: self.btnNumericBg),
                 ItemInfoSet(displayText: Const.MATH_ADD, bg: self.btnOprBg),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
             ],
             [
                 ItemInfoSet(displayText: "4", bg: self.btnNumericBg),
                 ItemInfoSet(displayText: "5", bg: self.btnNumericBg),
                 ItemInfoSet(displayText: "6", bg: self.btnNumericBg),
-                ItemInfoSet(displayText: Const.MATH_SUB, bg: self.btnOprBg),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
+                ItemInfoSet(displayText: Const.MATH_SUB, bg: self.btnOprBg)
             ],
             [
                 ItemInfoSet(displayText: "7", bg: self.btnNumericBg),
                 ItemInfoSet(displayText: "8", bg: self.btnNumericBg),
                 ItemInfoSet(displayText: "9", bg: self.btnNumericBg),
                 ItemInfoSet(displayText: Const.MATH_MULT, bg: self.btnOprBg),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
             ],
             [
                 ItemInfoSet(displayText: "0", bg: self.btnNumericBg),
                 ItemInfoSet(displayText: Const.MATH_ALLCLEAR, bg: self.btnNumericBg),
                 ItemInfoSet(displayText: Const.MATH_RETURN, bg: self.btnOprBg),
                 ItemInfoSet(displayText: Const.MATH_DIV, bg: self.btnOprBg),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-            ],
-            [
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-            ],
-            [
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-                ItemInfoSet(displayText: "", bg: .systemRed),
-            ],
+            ]
         ]
+        
+        // 6 X 6
+//        let items = [
+//            [
+//                ItemInfoSet(displayText: "1", bg: self.btnNumericBg),
+//                ItemInfoSet(displayText: "2", bg: self.btnNumericBg),
+//                ItemInfoSet(displayText: "3", bg: self.btnNumericBg),
+//                ItemInfoSet(displayText: Const.MATH_ADD, bg: self.btnOprBg),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//            ],
+//            [
+//                ItemInfoSet(displayText: "4", bg: self.btnNumericBg),
+//                ItemInfoSet(displayText: "5", bg: self.btnNumericBg),
+//                ItemInfoSet(displayText: "6", bg: self.btnNumericBg),
+//                ItemInfoSet(displayText: Const.MATH_SUB, bg: self.btnOprBg),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//            ],
+//            [
+//                ItemInfoSet(displayText: "7", bg: self.btnNumericBg),
+//                ItemInfoSet(displayText: "8", bg: self.btnNumericBg),
+//                ItemInfoSet(displayText: "9", bg: self.btnNumericBg),
+//                ItemInfoSet(displayText: Const.MATH_MULT, bg: self.btnOprBg),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//            ],
+//            [
+//                ItemInfoSet(displayText: "0", bg: self.btnNumericBg),
+//                ItemInfoSet(displayText: Const.MATH_ALLCLEAR, bg: self.btnNumericBg),
+//                ItemInfoSet(displayText: Const.MATH_RETURN, bg: self.btnOprBg),
+//                ItemInfoSet(displayText: Const.MATH_DIV, bg: self.btnOprBg),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//            ],
+//            [
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//            ],
+//            [
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//                ItemInfoSet(displayText: "", bg: .systemRed),
+//            ],
+//        ]
         
         let keyPad = KeyPadView(items: items, keyPadDelegate: self)
         super.view.addSubview(keyPad)

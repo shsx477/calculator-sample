@@ -91,7 +91,7 @@ class CalculationManager {
         return result
     }
     
-    private func onClearReeived() -> Double? {
+    private func onClearReceived() -> Double? {
         self.resetAllDatas()
         return 0
     }
@@ -136,7 +136,7 @@ class CalculationManager {
         case Const.MATH_MULT:       result = self.onOperatorReceived(self.multiplication)
         case Const.MATH_DIV:        result = self.onOperatorReceived(self.division)
         case Const.MATH_RETURN:     result = self.onReturnReceived()
-        case Const.MATH_ALLCLEAR:   result = self.onClearReeived()
+        case Const.MATH_ALLCLEAR:   result = self.onClearReceived()
         default:                    result = self.onNumericReceived(input)
         }
         
