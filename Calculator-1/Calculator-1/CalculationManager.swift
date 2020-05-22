@@ -30,8 +30,6 @@ class CalculationManager {
     private func division(_ val1: Double, _ val2: Double) -> Double { val1 / val2 }
     
     
-    private func calculate(_ val1: Double, _ val2: Double, _ oprAct: OPR_TYPE) -> Double { oprAct(val1, val2) }
-    
     private func resetAllDatas() {
         self.opd1 = 0
         self.opd2 = nil
@@ -52,7 +50,7 @@ class CalculationManager {
         if let val2 = self.opd2 {
             guard let opr = self.curOpr else { fatalError() }
             
-            self.opd1 = self.calculate(self.opd1, val2, opr)
+            self.opd1 = opr(self.opd1, val2)
             result = self.opd1
             
             self.opd2 = nil
@@ -69,7 +67,7 @@ class CalculationManager {
         if let val2 = self.opd2 {
             guard let opr = self.curOpr else { fatalError() }
             
-            self.opd1 = self.calculate(self.opd1, val2, opr)
+            self.opd1 = opr(self.opd1, val2)
             result = self.opd1
             
             self.lastOpr = opr
@@ -78,13 +76,13 @@ class CalculationManager {
             self.opd2 = nil
             
         } else if let opr = self.curOpr {
-            self.opd1 = self.calculate(self.opd1, self.opd1, opr)
+            self.opd1 = opr(self.opd1, self.opd1)
             result = self.opd1
             
             self.resetAllDatas()
             
         } else if let lastVal2 = self.lastOpd2, let lastOpr = self.lastOpr{
-            self.opd1 = self.calculate(self.opd1, lastVal2, lastOpr)
+            self.opd1 = lastOpr(self.opd1, lastVal2)
             result = self.opd1
         }
         
