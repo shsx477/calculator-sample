@@ -1,7 +1,5 @@
 # calculator-sample
 
-수정중...
-
 ### KeyPadView.swift
 > * 키패드View를 코드로 작성   
 > * 2차원 배열로 정보를 입력받아 키패드를 생성 (2x2이상 가능)   
