@@ -1,11 +1,3 @@
-//
-//  Calculator_1UITests.swift
-//  Calculator-1UITests
-//
-//  Created by 한선수 on 2020/05/20.
-//  Copyright © 2020 한선수. All rights reserved.
-//
-
 import XCTest
 
 class Calculator_1UITests: XCTestCase {

@@ -1,11 +1,3 @@
-//
-//  CalculationManager.swift
-//  Calculator-1
-//
-//  Created by 한선수 on 2020/05/21.
-//  Copyright © 2020 한선수. All rights reserved.
-//
-
 import Foundation
 
 class CalculationManager {

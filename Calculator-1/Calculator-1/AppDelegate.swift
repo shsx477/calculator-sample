@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Calculator-1
-//
-//  Created by 한선수 on 2020/05/20.
-//  Copyright © 2020 한선수. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
